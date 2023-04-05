@@ -23,30 +23,19 @@ P{
     padding: 1px 6px;
 }
 
-.video-preview {
-    width: 300px;
-    display: inline-block;  
-    vertical-align: top;
-    margin-right: 30px;
-}
+
 
 .thumbnail {
-    width: 300px;
+    width: 100%;
     font-weight: bold;
-    display: block;
     margin-bottom: 12px;
 }
 
-.channle-picture{
-    display: inline-block;
-    width: 50px;
-    vertical-align: top;
+.video-info-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
 }
 
-.video-info{
-    display: inline-block;
-    width: 200px;
-}
 .video-title{
     font-size: 14px;
     font-weight:500;
@@ -63,4 +52,11 @@ P{
 .profile-picture{
     border-radius: 50px;
     width: 40px;
+}
+
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
 }
