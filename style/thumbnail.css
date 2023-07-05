@@ -1,26 +1,105 @@
 P{
-    font-family: roboto,arial;
     margin-bottom: 0;
     margin-top: 0;
+}
+
+body{
+    font-family: roboto,arial;
+    margin: 0;
+}
+
+.main {
+    padding-top: 65px;
+    padding-left: 80px;
+    background-color: rgb(239, 239, 239);
+}
+
+.bar {
+    margin-top: 10px;
+    position: fixed;
+    width: 80px;
+    height: 100%;
+    background-color: white;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 65px;
+    align-content: center;
+    text-align: center;
+}
+
+.bar div{
+    padding-bottom:10px;
+    padding-top:10px;
+    font-size: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+.bar div:hover {
+    background-color: #dcdcdc;
 }
 
 
 .header {
     align-items: center;
-    margin-bottom: 20px;
-    width: 900px;
+    height: 55px;
+    padding: 5px;
     justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 2;
+
 }
 
+
+.left-section{
+    display: flex;
+    width: 150px;
+}
+.left-section img {
+    height: 25px;
+}
+.middle-section{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.right-section{
+    display: flex;
+    width: 200px;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+}
+
+
 .search-bar {
+    border-radius: 50px 0px 0px 50px;
     font-size: 20px;
-    display: block;
+    width: 60%;
+    padding-left: 20px;
+    border: 1px solid #4b4b4b;
+
 }
 
 .search-button {
-    width: 40px;
-    height: 40px;
-    padding: 1px 6px;
+    width: 20px;
+    display: flex;
+    /* padding: 1px 6px; */
+    background-color: #F7F7F7;
+    border: 1px solid #4b4b4b;
+    border-left: 0px;
+    justify-content: center;
+    padding: 0px 30px 0px 30px;
+    border-radius: 0px 50px 50px 0px;
 }
 
 
@@ -56,7 +135,28 @@ P{
 
 .video-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 16px;
     row-gap: 40px;
+    padding: 20px 20px;
+    border-top: 0.5px solid #ccc;
+}
+.video-preview {
+    cursor: pointer;
+}
+
+@media (max-width:700px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width:751px) and  (max-width: 1000px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (max-width:1000px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
