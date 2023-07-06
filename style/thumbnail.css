@@ -61,15 +61,21 @@ body{
 
 .left-section{
     display: flex;
-    width: 150px;
+    width: 100px;
 }
 .left-section img {
     height: 25px;
+}
+
+.header img:hover{
+    cursor: pointer;
 }
 .middle-section{
     display: flex;
     justify-content: center;
     flex: 1;
+    margin-left: 100px;
+
 }
 
 .right-section{
@@ -84,10 +90,9 @@ body{
 .search-bar {
     border-radius: 50px 0px 0px 50px;
     font-size: 20px;
-    width: 60%;
+    width: 50%;
     padding-left: 20px;
     border: 1px solid #4b4b4b;
-
 }
 
 .search-button {
