@@ -101,7 +101,9 @@ body{
     padding: 0px 30px 0px 30px;
     border-radius: 0px 50px 50px 0px;
 }
-
+.search-button img{
+    width: 25px;
+}
 
 
 .thumbnail {
@@ -145,6 +147,37 @@ body{
     cursor: pointer;
 }
 
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    display: flex;
+    align-content: center;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    /* width: 100px; */
+    background-color: #adadad;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 5px;
+    font-size: 12px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 110%;
+    left: 200%;
+    margin-left: -105px;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  } 
+
+
 @media (max-width:700px){
     .video-grid{
         grid-template-columns: 1fr 1fr;
@@ -160,3 +193,4 @@ body{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
+
